@@ -95,17 +95,17 @@
           </q-tab-panel>
 
           <q-tab-panel name="rulers">
-            <section class="bg-white shadow-lg p-8 rounded-lg mb-10">
-              <h1 class="text-green-main text-3xl font-semibold mb-4">
+            <section class="bg-white shadow-lg p-2 md:p-8 rounded-lg md:mb-10">
+              <h1 class="text-green-main md:text-3xl font-semibold mb-4">
                 Rulers of Kachia
               </h1>
-              <p class="text-gray-600 text-lg mb-4">
+              <p class="text-gray-600 text-sm md:text-lg mb-4">
                 Historically, the leadership in Kachia was not formally
                 organized. Brave and intelligent warriors led the people, and as
                 time progressed, the people began to organize themselves under
                 more formal leadership structures.
               </p>
-              <p class="text-gray-600 text-lg mb-8">
+              <p class="text-gray-600 text-sm md:text-lg mb-8">
                 Kachia was traditionally governed by village heads (Sarakuna),
                 with the first being Mal. Idi Magaji Maikalgo, followed by other
                 notable leaders. These are the rulers of Kachia:
@@ -122,7 +122,7 @@
                 <li>Alh. Sani Abubakar</li>
                 <li>Engr. Tanimu Badamasi (current Sarkin Kachia)</li>
               </ul>
-              <p class="text-gray-600 text-lg mt-4">
+              <p class="text-gray-600 text-sm md:text-lg mt-4">
                 Over time, the village administration in Kachia was influenced
                 by the Fulani or Habe system, which was likely adopted through
                 contact with the Hausas. The ruling houses today are those of
@@ -132,17 +132,17 @@
           </q-tab-panel>
 
           <q-tab-panel name="administration">
-            <section class="bg-white shadow-lg p-8 rounded-lg">
-              <h1 class="text-green-main text-3xl font-semibold mb-4">
+            <section class=" p-2 md:p-8 rounded-lg">
+              <h1 class="text-green-main text-sm md:text-3xl font-semibold mb-4">
                 Administration as a District
               </h1>
-              <p class="text-gray-600 text-lg mb-4">
+              <p class="text-gray-600 text-sm md:text-lg mb-4">
                 Kachia town became a district in 1907 after Zaria province was
                 divided into 32 districts. The administration was historically
                 imposed by the Zazzau Emirate with the help of the British
                 colonial government.
               </p>
-              <p class="text-gray-600 text-lg mb-8">
+              <p class="text-gray-600 text-sm md:text-lg mb-8">
                 The district has been governed by both indigenous and
                 non-indigenous District Heads. The indigenous heads include
                 Alhaji Ahmadu Bawa Gambo, making him the first indigenous

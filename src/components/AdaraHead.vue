@@ -6,7 +6,7 @@
       </span>
     </q-banner>
 
-    <q-page-container class="q-pa-md">
+    <q-page-container class="md:q-pa-md">
       <div class="row q-col-gutter-lg q-row-gutter-md justify-start">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 q-mb-lg" v-for="(district, index) in districtHeads" :key="index">
           <div class="q-pa-md flex flex-column items-center">
