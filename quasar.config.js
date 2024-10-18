@@ -21,13 +21,15 @@ module.exports = configure(function (/* ctx */) {
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
     boot: [
-      
-      
+
+
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
     css: [
-      'app.scss'
+      'app.scss',
+      'tailwind.css'
+      
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
@@ -50,6 +52,14 @@ module.exports = configure(function (/* ctx */) {
         browser: [ 'es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1' ],
         node: 'node20'
       },
+      postCSS: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+      cssAddon: true,
+
 
       vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueRouterBase,
@@ -87,6 +97,10 @@ module.exports = configure(function (/* ctx */) {
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
     framework: {
+      components: [
+        'QPage',
+        'QParallax',
+      ],
       config: {},
 
       // iconSet: 'material-icons', // Quasar icon set

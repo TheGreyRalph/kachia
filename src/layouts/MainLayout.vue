@@ -1,106 +1,92 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
+    <q-header class="bg-white py-3">
+      <q-toolbar class="font-semibold">
+
+        <q-toolbar-title class=" flex -ml-80 items-center justify-center text-green-main">
+          <img
+          src="images/kslogo.jpeg"
+          alt="Kachia Culture"
+          class="rounded-lg shadow-lg  w-[6%] "
+        />
+        <img
+        src="images/klog.png"
+        alt="Kachia Culture"
+        class=" w-[10%] "
+      />
+
+        </q-toolbar-title>
+
+        <div v-if="!$q.screen.lt.md" class="q-gutter-sm text-green-main q-mr-md q-mr-auto md:block">
+          <q-btn flat label="Home" :to="{ path: '/' }" />
+          <q-btn flat label="About Kachia" :to="{ path: '/about' }" />
+          <q-btn flat label="Culture" :to="{ path: '/culture' }" />
+          <q-btn flat label="Contact" :to="{ path: '/contact' }" />
+        </div>
+
         <q-btn
           flat
           dense
           round
           icon="menu"
-          aria-label="Menu"
+          v-if="$q.screen.lt.md"
           @click="toggleLeftDrawer"
+          class="q-hidden-md text-green-main"
         />
 
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
     <q-drawer
       v-model="leftDrawerOpen"
-      show-if-above
-      bordered
+      side="left"
+      overlay
+      class="q-hidden-md-and-up"
     >
       <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
-        </q-item-label>
-
-        <EssentialLink
-          v-for="link in linksList"
-          :key="link.title"
-          v-bind="link"
-        />
+        <q-item clickable v-ripple :to="{ path: '/' }">
+          <q-item-section>Home</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple :to="{ path: '/about' }">
+          <q-item-section>About Kachia</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple :to="{ path: '/culture' }">
+          <q-item-section>Culture</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple :to="{ path: '/government' }">
+          <q-item-section>Government</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple :to="{ path: '/tourism' }">
+          <q-item-section>Tourism</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple :to="{ path: '/news' }">
+          <q-item-section>News</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple :to="{ path: '/contact' }">
+          <q-item-section>Contact</q-item-section>
+        </q-item>
       </q-list>
     </q-drawer>
 
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-footer>
+  <FooterSection/>
+
+    </q-footer>
   </q-layout>
+
 </template>
 
 <script setup>
+import FooterSection from 'src/components/FooterSection.vue';
 import { ref } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
-
-defineOptions({
-  name: 'MainLayout'
-})
-
-const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
-]
 
 const leftDrawerOpen = ref(false)
 
-function toggleLeftDrawer () {
+function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
 </script>

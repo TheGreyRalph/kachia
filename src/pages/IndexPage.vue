@@ -1,14 +1,22 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page>
+    <HeroSection/>
+    <AboutSection/>
+    <GovernmentSection/>
+    <TraditionSection/>
+    <!-- <FooterSection/> -->
   </q-page>
 </template>
 
 <script setup>
+import HeroSection from "components/HeroSection.vue"
+import AboutSection from "components/AboutSection.vue"
+import GovernmentSection from "components/GovernmentSection.vue"
+// import TraditionSection from "components/TraditionSection.vue"
+// import FooterSection from 'src/components/FooterSection.vue';
+
+
+
 defineOptions({
   name: 'IndexPage'
 });

@@ -3,6 +3,9 @@
 
 module.exports = {
   plugins: [
+    // Tailwind CSS integration
+    require('tailwindcss'),
+
     // https://github.com/postcss/autoprefixer
     require('autoprefixer')({
       overrideBrowserslist: [
