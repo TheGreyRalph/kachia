@@ -3,16 +3,16 @@
     <q-header class="bg-white py-3">
       <q-toolbar class="font-semibold">
 
-        <q-toolbar-title class=" flex -ml-80 items-center justify-center text-green-main">
+        <q-toolbar-title class=" flex -ml-10 md:-ml-80  items-center justify-center text-green-main">
           <img
           src="images/kslogo.jpeg"
           alt="Kachia Culture"
-          class="rounded-lg shadow-lg  w-[6%] "
+          class="rounded-lg shadow-lg w-[20%]  md:w-[6%] "
         />
         <img
         src="images/klog.png"
         alt="Kachia Culture"
-        class=" w-[10%] "
+        class=" w-[30%] md:w-[10%] "
       />
 
         </q-toolbar-title>
