@@ -53,15 +53,6 @@
         <q-item clickable v-ripple :to="{ path: '/culture' }">
           <q-item-section>Culture</q-item-section>
         </q-item>
-        <q-item clickable v-ripple :to="{ path: '/government' }">
-          <q-item-section>Government</q-item-section>
-        </q-item>
-        <q-item clickable v-ripple :to="{ path: '/tourism' }">
-          <q-item-section>Tourism</q-item-section>
-        </q-item>
-        <q-item clickable v-ripple :to="{ path: '/news' }">
-          <q-item-section>News</q-item-section>
-        </q-item>
         <q-item clickable v-ripple :to="{ path: '/contact' }">
           <q-item-section>Contact</q-item-section>
         </q-item>
@@ -72,10 +63,10 @@
       <router-view />
     </q-page-container>
 
-    <q-footer>
+    <!-- <q-footer> -->
   <FooterSection/>
 
-    </q-footer>
+    <!-- </q-footer> -->
   </q-layout>
 
 </template>

@@ -144,7 +144,7 @@ const onSubmit = () => {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0; 
+  z-index: 0;
 }
 
 </style>

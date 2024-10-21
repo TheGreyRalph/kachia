@@ -77,7 +77,7 @@
       <q-divider />
 
 
-      <div class="relative group grid grid-cols-2 items-center justify-center gap-5" data-aos="zoom-in">
+      <div class="relative group flex  md:grid md:grid-cols-2 items-center justify-center gap-5" data-aos="zoom-in">
         <img
           src="images/mapk.png"
           alt="Kachia Culture"
@@ -252,6 +252,6 @@
 }
 
 .season-card:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 </style>
