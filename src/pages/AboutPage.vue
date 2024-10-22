@@ -1,6 +1,6 @@
 <template>
-  <q-page class="">
-    <div class="parallax-section">
+  <q-page class=" font-playfair">
+    <div class="parallax-section font-playfair">
       <div class="overlay"></div>
       <div class="parallax-content">
         <h1 class="text-h2 text-bold">Welcome to Kachia LGA</h1>
@@ -9,7 +9,7 @@
     </div>
 
 
-    <section class="q-pa-md mx-5 q-mt-lg">
+    <section class=" md:px-32 font-playfair q-mt-lg">
       <h2 class="text-h4 text-center text-green-main q-mb-md">About Kachia Local Government Area</h2>
       <q-divider inset />
       <p class="text-body1 q-mt-md q-px-md text-justify">
@@ -20,7 +20,7 @@
     </section>
 
 
-    <div class="  items-center mx-5 ">
+    <div class=" md:px-32   items-center mx-5 font-playfair  ">
       <p class="text-body1 text-justify q-pa-md">
         Ginger has become the hallmark of Kachia’s economy, earning its title as the "Home of Ginger." Other key agro-products include corn, millet, and soybeans. The town of Kachia itself is a bustling economic hub with various small and medium-scale businesses.
       </p>
@@ -48,7 +48,7 @@
           </div>
         </div>
 
-        <div class="relative group" data-aos="fade-right">
+        <div class="relative group  " data-aos="fade-right">
           <img
             src="images/kgin2.jpg"
             alt="Kachia Festival"
@@ -59,7 +59,7 @@
           </div>
         </div>
 
-        <div class="relative group" data-aos="fade-left">
+        <div class="relative group " data-aos="fade-left">
           <img
             src="images/kgin4.jpg"
             alt="Kachia Market"
@@ -72,7 +72,7 @@
       </div>
     </div>
 
-    <section class="q-pa-md">
+    <section class=" py-5  md:px-32">
       <h2 class="text-h5 text-green-main q-mb-sm text-bold">Boundaries</h2>
       <q-divider />
 
@@ -93,7 +93,7 @@
 
     </section>
 
-    <section class="q-pa-md bg-grey-2">
+    <section class=" md:px-32 py-5 bg-grey-2">
       <h2 class="text-h5 text-center text-green-main q-mb-sm text-bold">Administrative Subdivisions</h2>
       <q-divider inset />
       <div class="row q-gutter-md q-mt-md q-px-md">
@@ -116,7 +116,7 @@
       </div>
     </section>
 
-    <section class="q-pa-md q-mt-lg text-center">
+    <section class="md:px-32 py-5 q-mt-lg text-center">
       <h2 class="text-h5 text-green-main q-mb-sm text-bold">Population</h2>
       <q-divider inset />
       <p class="text-body1 q-mt-md q-px-md text-justify">
@@ -125,7 +125,7 @@
       </p>
     </section>
 
-    <section class="q-pa-md q-mt-lg bg-grey-1 text-center">
+    <section class="md:px-32 q-mt-lg bg-grey-1 text-center">
       <h2 class="text-h5 text-green-main q-mb-sm text-bold">Climate</h2>
       <q-divider inset />
 
@@ -149,7 +149,7 @@
           <p class="text-body2">Heavy rainfalls: May - Oct</p>
         </div>
 
-        <div class="season-card">
+        <div class="season-card md:px-32 py-5 ">
           <q-icon name="grain" size="50px" class="text-green" />
           <h3 class="text-h6 q-mt-md">Dry Season</h3>
           <p class="text-body2">Low humidity: Nov - Jan</p>
@@ -157,7 +157,7 @@
       </div>
     </section>
 
-    <section class="q-pa-md bg-grey-2 q-mt-lg text-center">
+    <section class=" md:px-32 q-mt-lg text-center">
       <h2 class="text-h5 text-green-main q-mb-sm text-bold">Religion</h2>
       <q-divider inset />
       <p class="text-body1 q-mt-md q-px-md text-justify">
@@ -165,7 +165,7 @@
       </p>
     </section>
 
-    <section class="q-pa-md q-mt-lg text-center">
+    <section class="md:px-32 py-5 q-mt-lg text-center">
       <h2 class="text-h5 text-green-main q-mb-sm text-bold">Notable People</h2>
       <q-divider inset />
       <ul class="text-body1 q-pl-lg q-mt-md text-left">

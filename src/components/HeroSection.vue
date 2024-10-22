@@ -1,5 +1,5 @@
 <template>
-  <q-page class="flex flex-center relative overflow-hidden">
+  <q-page class="flex flex-center font-playfair relative overflow-hidden">
     <img
       alt="Quasar logo"
       src="images/kachaiHero.jpg"
@@ -9,7 +9,7 @@
     <div class="absolute top-0 left-0 h-full w-full bg-black opacity-40 parallax-bg"></div>
 
     <div class="relative z-10 flex flex-col justify-center items-center h-full text-center text-container">
-      <h1 class="text-white text-4xl md:text-6xl font-bold hero-title">
+      <h1 class="text-white  text-4xl md:text-6xl font-bold hero-title">
         Explore Kachia
       </h1>
       <p class="text-white text-lg md:text-xl mt-4 hero-subtitle">

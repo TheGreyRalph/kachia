@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header class="bg-white py-3">
+    <q-header class="bg-white py-3 font-playfair  ">
       <q-toolbar class="font-semibold">
 
         <q-toolbar-title class=" flex -ml-10 md:-ml-80  items-center justify-center text-green-main">

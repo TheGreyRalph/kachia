@@ -1,5 +1,5 @@
 <template>
-  <q-page class="q-pa-md culture-page">
+  <q-page class="q-pa-md font-playfair culture-page">
     <div class="parallax-section">
       <div class="parallax-content">
         <h1 class="text-h2 text-bold">The Culture of Kachia</h1>
@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <section class="q-pa-md q-mt-md">
+    <section class="md:px-32 md:py-5 q-mt-md">
       <h2 class="text-h4 text-green-main q-mb-md text-center">The People of Kachia</h2>
       <q-divider inset />
       <p class="text-body1 q-mt-md q-px-md text-justify">
@@ -15,7 +15,7 @@
       </p>
     </section>
 
-    <section class="q-pa-md flex q-mt-lg bg-grey-1 rounded-borders">
+    <section class="md:px-32 md:py-5 flex q-mt-lg bg-grey-1 rounded-borders">
       <h3 class="text-h5 text-indigo-10 q-mb-md">The Adara Tribe</h3>
       <div class=" md:grid flex items-center justify-center grid-cols-2">
         <q-img
@@ -30,7 +30,7 @@
 
     </section>
 
-    <section class="q-pa-md q-mt-lg">
+    <section class="md:px-32 md:py-5 q-mt-lg">
       <h3 class="text-h5 text-indigo-10 q-mb-md">The Ham (Jaba) Tribe</h3>
       <div class=" md:grid flex items-center gap-10  justify-center grid-cols-2">
         <p class="text-body1 q-px-md text-justify">
@@ -43,7 +43,7 @@
       </div>
     </section>
 
-    <section class="q-pa-md q-mt-lg bg-grey-1 rounded-borders">
+    <section class="md:px-32 md:py-5 q-mt-lg bg-grey-1 rounded-borders">
       <h3 class="text-h5 text-indigo-10 q-mb-md">The Kuturmi Tribe</h3>
       <div class=" md:grid flex items-center justify-center grid-cols-2">
         <q-img
@@ -57,14 +57,14 @@
 
     </section>
 
-    <section class="q-pa-md q-mt-lg">
+    <section class="md:px-32 md:py-5 q-mt-lg">
       <h3 class="text-h5 text-green-main q-mb-md">Religion and Judiciary in Kachia</h3>
       <p class="text-body1 q-px-md text-justify">
         Before the arrival of missionaries, the people of Kachia practiced traditional religions, venerating nature and ancestral spirits. Today, Christianity is the predominant religion in the region, with a considerable Muslim population, and traces of traditional worship still practiced. Justice in Kachia was traditionally administered by local courts, with tribal leaders overseeing the judiciary. Although influenced by colonial rule, the native judicial system still plays an important role.
       </p>
     </section>
 
-    <section class="q-pa-md q-mt-lg">
+    <section class="md:px-32 md:py-5 q-mt-lg">
       <h3 class="text-h5 text-indigo-10 q-mb-md">Traditional Dances</h3>
       <div class="">
         <q-img
@@ -86,7 +86,7 @@
           img-class="rounded-borders"
         />
       </div>
-      <p class="text-body1 q-px-md text-justify q-mt-md">
+      <p class="text-body1  text-justify q-mt-md">
         Traditional dances are an essential part of the cultural heritage of Kachia, performed at festivals and important events. The Adara, Kuturmi, and Ham tribes each have their own unique dance styles, often accompanied by vibrant drumming and colorful attire.
       </p>
     </section>
@@ -142,7 +142,7 @@
 
 .parallax-section {
   position: relative;
-  background-image: url('images/kachia2.jpg'); 
+  background-image: url('images/kachia2.jpg');
   height: 400px;
   background-attachment: fixed;
   background-position: center;

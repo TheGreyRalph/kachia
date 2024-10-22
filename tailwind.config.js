@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: [' lato ', 'serif'], // Custom font
+      },
       colors:{
         bright:{
           shade:"#F5F5F5"

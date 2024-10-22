@@ -1,5 +1,5 @@
 <template>
-  <q-page class="my-20">
+  <q-page class="my-20 font-playfair">
     <q-banner class=" bg-green-main text-white">
       <q-icon name="mdi-account-circle" />
       <span class="text-h5">Ham Traditional Council - District Heads</span>

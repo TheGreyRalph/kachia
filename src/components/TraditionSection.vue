@@ -1,5 +1,5 @@
 <template>
-  <q-page class="md:bg-bright-shade px-2 py-2 md:py-10 md:md:px-10">
+  <q-page class="md:bg-bright-shade font-playfair px-2 py-2 md:py-10 md:md:px-10">
     <section class="rounded-lg md:mb-10">
       <h1 class="text-green-main text-sm md:text-3xl font-semibold mb-4">Traditional Institutions</h1>
       <p class="text-gray-60 text-sm md:text-lg mb-8">

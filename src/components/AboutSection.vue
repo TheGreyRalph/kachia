@@ -1,5 +1,5 @@
 <template>
-  <q-page class="bg-bright-shade py-20 px-10">
+  <q-page class="bg-bright-shade px-5 py-5 md:py-20 font-playfair md:px-32">
     <div class="flex flex-wrap justify-between items-start q-col-gutter-md">
       <div class="w-full md:w-[40%]" data-aos="fade-right">
         <h1 class="text-green-main text-3xl font-semibold">About Kachia</h1>
@@ -17,58 +17,11 @@
           Nigeria's northern region. From its storied past to its promising
           future, Kachia offers a captivating glimpse into the spirit of Kaduna.
         </p>
-        <div class="flex flex-col mt-10 items-start w-full ">
-          <div
-            class="flex justify-start items-start w-full"
-            data-aos="fade-left"
-          >
-            <div class="flex items-start flex-col">
-              <img
-                alt="Dr. Manzo Maigari"
-                src="images/drmanzo.jpeg"
-                class="rounded-md  shadow-lg w-60 h-60 object-cover border-4 border-green-main"
-              />
-              <p class="text-sm font-semibold mt-4 text-center text-gray-700">
-                Chairman of Kachia LGA, Kaduna State
-              </p>
-            </div>
-          </div>
-          <div class="w-full" data-aos="fade-right">
-            <h1 class="text-green-main text-3xl font-semibold">
-              Dr. Manzo Maigari
-            </h1>
-            <h2 class="text-gray-500 font-semibold">
-              Chairman, Kachia Local Government Area, Kaduna State
-            </h2>
-            <p class="">
-              Dr. Manzo Maigari is an accomplished leader currently serving as
-              the Chairman of Kachia Local Government Area and Special Adviser
-              on Political Affairs to the Governor of Kaduna State. He is the
-              former Director General of the Nigeria Agribusiness Group (NABG)
-              and CEO of Agrolog Limited. With a strong background in
-              leadership, he also chairs Greysoft Technologies and is involved
-              in agricultural policy through roles like his membership on the
-              Nigeria Advisory Board for Agricultural Policy and Research in
-              Africa (APRA).
-            </p>
-            <p class="">
-              From 2015 to 2019, he served as Commissioner for Agriculture,
-              Forestry, Commerce, and Tourism in Kaduna State, where he
-              introduced key policies, such as the Kaduna State Forestry Policy
-              and the creation of the Kaduna Agricultural Development Agency
-              (KADA). Dr. Maigari holds a Doctor of Veterinary Medicine from
-              Ahmadu Bello University and an MBA from Royal Kennedy College,
-              Switzerland, with further studies at Harvard and other global
-              institutions. His work has significantly impacted agriculture in
-              Kaduna, Nigeria, and Africa.
-            </p>
-          </div>
-        </div>
+
 
       </div>
-
-      <div
-        class="bg-green-main p-8 flex justify-center items-center w-full md:w-1/2"
+ <div
+        class="bg-green-main p-8 flex justify-center  items-center w-[90%] md:w-[40%] "
         data-aos="fade-left"
       >
         <div
@@ -96,6 +49,53 @@
           />
         </div>
       </div>
+
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 justify-center mt-10  md:mt-20 items-start w-full ">
+      <div
+        class="flex  justify-start items-start w-full"
+        data-aos="fade-left"
+      >
+        <div class="flex items-start flex-col">
+          <img
+            alt="Dr. Manzo Maigari"
+            src="images/drmanzo.jpeg"
+            class="rounded-md  shadow-lg w-80 h-80 object-cover border-4 border-green-main"
+          />
+          <h1 class="text-green-main text-3xl font-semibold">
+            Dr. Manzo Maigari
+          </h1>
+          <h2 class="text-gray-500 font-semibold">
+            Chairman, Kachia Local Government Area, Kaduna State
+          </h2>
+
+        </div>
+      </div>
+      <div class="w-full" data-aos="fade-right">
+
+        <p class=" flex  ">
+          Dr. Manzo Maigari is an accomplished leader currently serving as
+          the Chairman of Kachia Local Government Area and Special Adviser
+          on Political Affairs to the Governor of Kaduna State. He is the
+          former Director General of the Nigeria Agribusiness Group (NABG)
+          and CEO of Agrolog Limited. With a strong background in
+          leadership, he also chairs Greysoft Technologies and is involved
+          in agricultural policy through roles like his membership on the
+          Nigeria Advisory Board for Agricultural Policy and Research in
+          Africa (APRA).
+        </p>
+        <p class="">
+          From 2015 to 2019, he served as Commissioner for Agriculture,
+          Forestry, Commerce, and Tourism in Kaduna State, where he
+          introduced key policies, such as the Kaduna State Forestry Policy
+          and the creation of the Kaduna Agricultural Development Agency
+          (KADA). Dr. Maigari holds a Doctor of Veterinary Medicine from
+          Ahmadu Bello University and an MBA from Royal Kennedy College,
+          Switzerland, with further studies at Harvard and other global
+          institutions. His work has significantly impacted agriculture in
+          Kaduna, Nigeria, and Africa.
+        </p>
+      </div>
     </div>
   </q-page>
 </template>
@@ -109,7 +109,7 @@ onMounted(() => {
   AOS.init({
     duration: 1200,
     offset: 200,
-    once: true, 
+    once: true,
   });
 });
 </script>

@@ -1,11 +1,11 @@
 <template>
-  <q-page class="bg-bright-shade py-10 px-10">
-    <div class="row q-col-gutter-md">
-      <div class="md:col-12 md:col-md-3">
+  <q-page class="bg-bright-shade font-playfair  py-10 px-10">
+    <div class=" q-col-gutter-md">
+      <div class="md:col-12  md:col-md-3">
         <q-tabs
           vertical
           v-model="activeTab"
-          class="bg-gray-100 rounded-lg shadow-lg"
+          class="bg-gray-100 flex justify-between w-full rounded-lg shadow-lg"
           active-color="green"
           indicator-color="yellow"
         >
@@ -25,7 +25,7 @@
               label="Traditional Institutions"
               class="text-left"
             />
-            <q-tab
+            <!-- <q-tab
               name="Adara"
               label="Adara Traditional Council"
               class="text-left"
@@ -34,7 +34,7 @@
               name="Ham"
               label="Ham Traditional Council"
               class="text-left"
-            />
+            /> -->
           </div>
         </q-tabs>
       </div>
@@ -46,7 +46,7 @@
               <h1 class="text-green-main text-3xl text-center md:text-start font-semibold mb-4">
                 Governance
               </h1>
-              <p class="text-gray-600 text-sm md:text-lg text-center md:text-start mb-8">
+              <p class="text-gray-600 font-playfair  text-sm md:text-base text-center md:text-start mb-8">
                 The local government of Kachia is headed by the Executive
                 Governor of Kaduna State and the Chairman of Kachia LGA. They
                 work together with other officials to ensure smooth
@@ -63,7 +63,7 @@
                     src="images/gov.jpeg"
                     class="rounded-full shadow-lg md:w-40 h-40 object-cover border-4 border-green-500 mb-4"
                   />
-                  <h2 class="text-xl font-semibold text-white">
+                  <h2 class="text-xl font-playfair font-semibold text-white">
                     Executive Governor
                   </h2>
                   <p class="text-gray-100 mt-2">
@@ -84,7 +84,7 @@
                   <h2 class="text-xl font-semibold text-white">
                     Chairman of Kachia LGA
                   </h2>
-                  <p class="text-gray-100 mt-2">
+                  <p class="text-gray-100 font-playfair mt-2">
                     Responsible for local governance, addressing the needs of
                     the community, and working closely with state officials to
                     implement local policies and development projects.
@@ -99,7 +99,7 @@
               <h1 class="text-green-main md:text-3xl font-semibold mb-4">
                 Rulers of Kachia
               </h1>
-              <p class="text-gray-600 text-sm md:text-lg mb-4">
+              <p class="text-gray-600 font-playfair text-sm md:text-lg mb-4">
                 Historically, the leadership in Kachia was not formally
                 organized. Brave and intelligent warriors led the people, and as
                 time progressed, the people began to organize themselves under
@@ -132,7 +132,7 @@
           </q-tab-panel>
 
           <q-tab-panel name="administration">
-            <section class=" p-2 md:p-8 rounded-lg">
+            <section class=" p-2 md:p-8 rounded-lg font-playfair">
               <h1 class="text-green-main text-sm md:text-3xl font-semibold mb-4">
                 Administration as a District
               </h1>

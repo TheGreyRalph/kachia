@@ -1,5 +1,5 @@
 <template>
-  <q-page class=" text-center">
+  <q-page class=" text-center font-playfair">
 
 
     <div class="parallax-section">
