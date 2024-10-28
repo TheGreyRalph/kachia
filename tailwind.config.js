@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        playfair: [' lato ', 'serif'], // Custom font
+        playfair: ['Montserrat', 'sans-serif'],
       },
       colors:{
         bright:{

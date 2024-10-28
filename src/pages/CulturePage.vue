@@ -10,90 +10,132 @@
     <section class="md:px-32 md:py-5 q-mt-md">
       <h2 class="text-h4 text-green-main q-mb-md text-center">The People of Kachia</h2>
       <q-divider inset />
-      <p class="text-body1 q-mt-md q-px-md text-justify">
+      <p class="text-body1 font-playfair q-mt-md q-px-md text-justify">
         Kachia Local Government Area is home to a vibrant mix of ethnic groups, including the Kadara, Jaba, and Kuturmi as the dominant tribes. Others, such as the Hausa, Fulani, Bajju, Ikulu, Yoruba, Igbo, and Kagoro, also have a strong presence. Despite the diverse ethnicities, the people have coexisted peacefully over the years, creating a unique cultural blend.
       </p>
-    </section>
 
-    <section class="md:px-32 md:py-5 flex q-mt-lg bg-grey-1 rounded-borders">
-      <h3 class="text-h5 text-indigo-10 q-mb-md">The Adara Tribe</h3>
-      <div class=" md:grid flex items-center justify-center grid-cols-2">
-        <q-img
-        src="images/culture1.png"
-          class="md:w-[80%] "
-          style=""
-        />
-        <p class="text-body1 q-px-md text-justify">
-          According to scholars, the Kadara people trace their origins to the great rock of Kufena, located six miles from Zaria. The tribe moved southward due to Hausa migration, eventually settling in the Kajuru and Kachia areas. Oral tradition also suggests that they might have migrated from the Middle East, fleeing persecution for refusing to convert to Islam. Despite the uncertainties around their precise origin, the Kadara people’s rich history is well-preserved in their traditions and cultural practices.
-        </p>
+
+
+      <!-- Desktop Sidebar & Content -->
+      <div class="desktop-view flex">
+        <!-- Sidebar -->
+        <aside class="sidebar bg-light shadow rounded-sidebar">
+          <q-list>
+            <q-item
+              clickable
+              v-ripple
+              v-for="tribe in tribes"
+              :key="tribe.id"
+              @click="selectTribe(tribe)"
+              :active="tribe.id === selectedTribe?.id"
+              class="sidebar-item"
+            >
+              <q-icon :name="tribe.icon" class="sidebar-icon" />
+              <span class="sidebar-text">{{ tribe.name }}</span>
+            </q-item>
+          </q-list>
+        </aside>
+
+        <!-- Main Content Section -->
+        <div class="content-section q-ml-lg">
+          <div v-if="selectedTribe">
+            <h3 class="text-h5 text-green-main">{{ selectedTribe.name }}</h3>
+            <p class="text-body1 text-justify q-mt-md">
+              {{ selectedTribe.description }}
+            </p>
+            <!-- Render tribe-specific component dynamically if exists -->
+            <component v-if="selectedTribe.component" :is="selectedTribe.component" />
+          </div>
+          <div v-else>
+            <p class="text-body1 q-mt-md">Please select a tribe to view more information.</p>
+          </div>
+        </div>
       </div>
 
-    </section>
 
-    <section class="md:px-32 md:py-5 q-mt-lg">
-      <h3 class="text-h5 text-indigo-10 q-mb-md">The Ham (Jaba) Tribe</h3>
-      <div class=" md:grid flex items-center gap-10  justify-center grid-cols-2">
-        <p class="text-body1 q-px-md text-justify">
-          The Ham people, commonly referred to as Jaba, reside in the southern and southeastern parts of Kachia. Oral traditions state that they migrated south from Egypt, following the Nile Valley. Today, the Jaba live across the Gurara River and maintain a distinct cultural identity.
-        </p>
-        <q-img
-        src="images/culture2.png"
-          class="md:w-[80%] "
-        />
+      <!-- Mobile Accordion View -->
+      <div class="mobile-view accordion-tabs q-mt-md">
+        <div v-for="tribe in tribes" :key="tribe.id" class="accordion-item">
+          <div
+            class="accordion-header q-pa-md text-green-main text-bold"
+            @click="toggleTribe(tribe)"
+          >
+            {{ tribe.name }}
+          </div>
+
+          <transition name="fade">
+            <div v-show="tribe.id === activeTribeId" class="accordion-content text-body1 text-justify q-pa-md">
+              <p>{{ tribe.description }}</p>
+              <component v-if="tribe.component" :is="tribe.component" />
+            </div>
+          </transition>
+        </div>
       </div>
-    </section>
-
-    <section class="md:px-32 md:py-5 q-mt-lg bg-grey-1 rounded-borders">
-      <h3 class="text-h5 text-indigo-10 q-mb-md">The Kuturmi Tribe</h3>
-      <div class=" md:grid flex items-center justify-center grid-cols-2">
-        <q-img
-        src="images/culture3.png"
-          class="q-mb-md md:w-[80%] "
-        />
-        <p class="text-body1 q-px-md text-justify">
-          The Kuturmi people trace their origins back to Kano, migrating to their current settlements after the Jihad wars of the early 1800s. Along the way, they intermarried with the Kadara people, creating a rich cultural blend that continues to thrive today. The Kuturmi can now be found across multiple regions within Kachia and Kagarko Local Government Areas.
-        </p>
-      </div>
-
-    </section>
-
-    <section class="md:px-32 md:py-5 q-mt-lg">
-      <h3 class="text-h5 text-green-main q-mb-md">Religion and Judiciary in Kachia</h3>
-      <p class="text-body1 q-px-md text-justify">
-        Before the arrival of missionaries, the people of Kachia practiced traditional religions, venerating nature and ancestral spirits. Today, Christianity is the predominant religion in the region, with a considerable Muslim population, and traces of traditional worship still practiced. Justice in Kachia was traditionally administered by local courts, with tribal leaders overseeing the judiciary. Although influenced by colonial rule, the native judicial system still plays an important role.
-      </p>
-    </section>
-
-    <section class="md:px-32 md:py-5 q-mt-lg">
-      <h3 class="text-h5 text-indigo-10 q-mb-md">Traditional Dances</h3>
-      <div class="">
-        <q-img
-         src="images/culture1.png"
-          style=""
-          class="w-1/2"
-          img-class="rounded-borders"
-        />
-        <q-img
-          src="images/culture3.png"
-          style=""
-          class="w-1/2"
-          img-class="rounded-borders"
-        />
-        <q-img
-         src="images/culture2.png"
-          style=""
-          class="w-1/2"
-          img-class="rounded-borders"
-        />
-      </div>
-      <p class="text-body1  text-justify q-mt-md">
-        Traditional dances are an essential part of the cultural heritage of Kachia, performed at festivals and important events. The Adara, Kuturmi, and Ham tribes each have their own unique dance styles, often accompanied by vibrant drumming and colorful attire.
-      </p>
     </section>
   </q-page>
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+// Import tribe-specific components
+import AdaraGroup from './AdaraGroup.vue';
+import HamGroup from 'src/components/HamGroup.vue';
+import KurmiGroup from 'src/components/KurmiGroup.vue';
+
+// Tribe data with corresponding components
+const tribes = [
+  {
+    id: 1,
+    name: 'Kadara',
+    description:
+      'The Kadara people are known for their unique traditions, rich history, and cultural heritage.',
+    component: AdaraGroup,
+  },
+  {
+    id: 2,
+    name: 'Jaba',
+    description:
+      'The Jaba tribe is celebrated for its traditional music, dance, and colorful festivals.',
+    component: HamGroup,
+  },
+  {
+    id: 3,
+    name: 'Kuturmi',
+    description:
+      'The Kuturmi people are famous for their crafts and agricultural practices.',
+      component: KurmiGroup,
+  },
+  {
+    id: 4,
+    name: 'Bajju',
+    description:
+      'The Bajju people have a strong sense of community, known for their vibrant clothing and customs.',
+  },
+  {
+    id: 5,
+    name: 'Ikulu',
+    description:
+      'The Ikulu tribe is known for its ancient rituals and deep connection with the land.',
+  },
+  {
+    id: 6,
+    name: 'Kagoro',
+    description:
+      'The Kagoro people are renowned for their traditional festivals and historical landmarks.',
+  },
+];
+
+const selectedTribe = ref(null);
+const activeTribeId = ref(null);
+
+const selectTribe = (tribe) => {
+  selectedTribe.value = tribe;
+};
+
+const toggleTribe = (tribe) => {
+  activeTribeId.value = activeTribeId.value === tribe.id ? null : tribe.id;
+};
 </script>
 
 <style scoped>
@@ -105,39 +147,12 @@
   color: #2e7d32;
 }
 
-.q-img-row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.q-parallax .absolute-center h1 {
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-.q-parallax .absolute-center p {
-  font-size: 1.5rem;
-}
-
 .rounded-borders {
   border-radius: 12px;
 }
 
 .text-justify {
   text-align: justify;
-}
-
-.bg-grey-1 {
-  background-color: #f0f0f0;
-}
-
-.q-ma-md {
-  margin: 12px;
-}
-
-.q-mt-lg {
-  margin-top: 24px;
 }
 
 .parallax-section {
@@ -164,5 +179,109 @@
 .content-section {
   background-color: white;
   padding: 40px;
+  flex: 1;
+}
+
+.accordion-tabs {
+  display: none;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background-color: #e8f5e9;
+  cursor: pointer;
+}
+
+.accordion-content {
+  background-color: white;
+  padding: 15px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.desktop-view {
+  display: flex;
+  padding: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 200px;
+  padding: 10px;
+  background-color: #f0f5f1; /* Soft green background */
+}
+
+.rounded-sidebar {
+  border-radius: 12px;
+}
+
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  color: #2e7d32; /* Main green color for text */
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #e8f5e9; /* Slightly darker green on hover */
+  border-radius: 8px;
+}
+
+.sidebar-icon {
+  color: #2e7d32; /* Green icon color */
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.sidebar-text {
+  color: #2e7d32;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Main Content Section */
+.content-section {
+  background-color: white;
+  padding: 40px;
+  flex: 1;
+  border-radius: 8px;
+}
+
+/* Responsive Adjustment: Hide desktop view on small screens */
+@media (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+  .accordion-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-view {
+    display: none;
+  }
 }
 </style>

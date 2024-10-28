@@ -21,6 +21,11 @@
               class="text-left"
             />
             <q-tab
+              name="lga"
+              label="Kachia as a LGA"
+              class="text-left"
+            />
+            <q-tab
               name="traditional"
               label="Traditional Institutions"
               class="text-left"
@@ -131,6 +136,10 @@
             </section>
           </q-tab-panel>
 
+          <q-tab-panel name="lga">
+            <KachiaLga/>
+          </q-tab-panel>
+
           <q-tab-panel name="administration">
             <section class=" p-2 md:p-8 rounded-lg font-playfair">
               <h1 class="text-green-main text-sm md:text-3xl font-semibold mb-4">
@@ -179,6 +188,9 @@
                   </ul>
                 </div>
               </div>
+              <div>
+                <AdminKachia/>
+              </div>
             </section>
           </q-tab-panel>
           <q-tab-panel name="traditional">
@@ -203,6 +215,8 @@ import { ref } from "vue";
 import AdaraHead from "./AdaraHead.vue";
 import TraditionSection from "./TraditionSection.vue";
 import HamHeads from "./HamHeads.vue";
+import AdminKachia from "./AdminKachia.vue";
+import KachiaLga from "./KachiaLga.vue";
 
 const activeTab = ref("governance");
 </script>
