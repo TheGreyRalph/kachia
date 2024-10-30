@@ -6,8 +6,8 @@
         <q-tabs
           vertical
           v-model="activeTab"
-          class="bg-gray-100 flex justify-between w-full rounded-lg shadow-lg"
-          active-color="green"
+          class="bg-green-main text-white flex justify-between w-full rounded-lg shadow-lg"
+          active-color="green bg-greenn-shade"
           indicator-color="yellow"
         >
           <div class="flex flex-row md:flex gap-3 text-[3px] md:text-base">

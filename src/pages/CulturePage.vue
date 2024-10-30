@@ -94,9 +94,9 @@ const tribes = [
   },
   {
     id: 2,
-    name: 'Jaba',
+    name: 'Ham',
     description:
-      'The Jaba tribe is celebrated for its traditional music, dance, and colorful festivals.',
+      'The Ham people is celebrated for its traditional music, dance, and colorful festivals.',
     component: HamGroup,
   },
   {

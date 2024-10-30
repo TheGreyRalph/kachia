@@ -17,6 +17,9 @@ module.exports = {
         green:{
           main:"#72B739"
         },
+        greenn:{
+          shade:"#E3F2C0"
+        },
         blue:{
           main:"#031F83"
         }
