@@ -2,6 +2,54 @@
   <q-page>
     <div class=" my-8">
       <section class=" bg-white rounded-lg overflow-hidden">
+        <h1
+                class="text-green-main text-sm md:text-3xl font-semibold mb-4"
+              >
+                Administration as a District
+              </h1>
+              <p class="text-gray-600 text-sm md:text-lg mb-4">
+                Kachia town became a district in 1907 after Zaria province was
+                divided into 32 districts. The administration was historically
+                imposed by the Zazzau Emirate with the help of the British
+                colonial government.
+              </p>
+              <p class="text-gray-600 text-sm md:text-lg mb-8">
+                The district has been governed by both indigenous and
+                non-indigenous District Heads. The indigenous heads include
+                Alhaji Ahmadu Bawa Gambo, making him the first indigenous
+                District Head of Kachia.
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                  <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                    Non-Indigenous District Heads:
+                  </h2>
+                  <ul class="list-disc list-inside text-gray-700">
+                    <li>Sarkin Zana Umaru</li>
+                    <li>Ma'aji Zubairu</li>
+                    <li>Dangaladima Zubairu</li>
+                    <li>Dangaladima Sumailu</li>
+                    <li>Wambai Usman</li>
+                    <li>Wambai Sani Maigamu</li>
+                    <li>Mal. Dikko Turaki Babba</li>
+                    <li>Danbarau Gidado</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                    Indigenous District Heads:
+                  </h2>
+                  <ul class="list-disc list-inside text-gray-700">
+                    <li>Alh. Bawa Gambo Sarkin Zaria</li>
+                    <li>Alh. Ahmadu Salihu Ma'aji</li>
+                    <li>Mal. Musa Gaiya Ma'aji Babba</li>
+                    <li>Alh. Musa B. Gambo Kuyanbana</li>
+                    <li>Alh. Sabiu Suleiman Ma'aji Babba Adara</li>
+                  </ul>
+                </div>
+              </div>
         <!-- Header Section with Hero Image and Title -->
 
           <div class=" ">

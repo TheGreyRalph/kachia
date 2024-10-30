@@ -43,7 +43,6 @@
             <p class="text-body1 text-justify q-mt-md">
               {{ selectedTribe.description }}
             </p>
-            <!-- Render tribe-specific component dynamically if exists -->
             <component v-if="selectedTribe.component" :is="selectedTribe.component" />
           </div>
           <div v-else>
@@ -82,6 +81,7 @@ import { ref } from 'vue';
 import AdaraGroup from './AdaraGroup.vue';
 import HamGroup from 'src/components/HamGroup.vue';
 import KurmiGroup from 'src/components/KurmiGroup.vue';
+import BajjuGuy from 'src/components/BajjuGuy.vue';
 
 // Tribe data with corresponding components
 const tribes = [
@@ -111,18 +111,13 @@ const tribes = [
     name: 'Bajju',
     description:
       'The Bajju people have a strong sense of community, known for their vibrant clothing and customs.',
+      component: BajjuGuy,
   },
   {
     id: 5,
     name: 'Ikulu',
     description:
       'The Ikulu tribe is known for its ancient rituals and deep connection with the land.',
-  },
-  {
-    id: 6,
-    name: 'Kagoro',
-    description:
-      'The Kagoro people are renowned for their traditional festivals and historical landmarks.',
   },
 ];
 

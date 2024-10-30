@@ -20,9 +20,13 @@
 
         <!-- Right: Cultural Information -->
         <div class="info-section q-ml-lg">
-          <div class="artifact-section flex items-center my-5">
-            <q-img src="/images/kum2.jpeg" alt="Kuturmi Artifact" class="image-styled" />
-            <p class="q-mt-sm text-center">Traditional Kuturmi Artifacts – Symbols of Cultural Heritage</p>
+          <div class="my-5 mx-6">
+            <div class=" flex flex-nowrap gap-5">
+              <q-img src="/images/gurara3.png" alt="Kuturmi Artifact" class="image-styled" />
+              <q-img src="/images/gurara1.png" alt="Kuturmi Artifact" class="image-styled" />
+            </div>
+
+            <p class="q-mt-sm text-center">The Gurara Dam – Symbols of Cultural Heritage</p>
           </div>
 
           <h3 class="text-h5 text-green-main">Cultural Heritage</h3>
@@ -41,7 +45,7 @@
           </p>
 
           <div class="flex my-5 no-wrap flex-nowrap gap-5">
-            <q-img src="images/kum4.jpeg" alt="Kuturmi Dance" class="image-styled" />
+            <q-img src="images/kum22.jpeg" alt="Kuturmi Dance" class="image-styled" />
             <q-img src="images/kum5.jpeg" alt="Kuturmi Festival" class="image-styled" />
           </div>
 
