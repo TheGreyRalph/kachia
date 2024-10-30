@@ -21,7 +21,7 @@
           <q-tab name="history" icon="book" label="History" />
           <q-tab name="origin" icon="language" label="Etymology" />
           <q-tab name="army" icon="military_tech" label="Arrival of Army" />
-          <q-tab name="tribe" icon="people" label="Tribes and Attire" />
+          <!-- <q-tab name="tribe" icon="people" label="Tribes and Attire" /> -->
           <q-tab name="boundaries" icon="map" label="Boundaries" />
           <q-tab name="population" icon="people" label="Population" />
           <q-tab name="climate" icon="wb_sunny" label="Climate" />
@@ -52,9 +52,9 @@
           <q-tab-panel class="bg-bright-shade" name="history">
             <HisTory />
           </q-tab-panel>
-          <q-tab-panel class="bg-bright-shade" name="tribe">
+          <!-- <q-tab-panel class="bg-bright-shade" name="tribe">
             <TribePage />
-          </q-tab-panel>
+          </q-tab-panel> -->
           <q-tab-panel class="bg-bright-shade" name="origin">
             <OriGin />
           </q-tab-panel>
@@ -93,7 +93,7 @@ const tabs = [
   { name: "history", label: "History", icon: "book", component: HisTory },
   { name: "origin", label: "Etymology", icon: "language", component: OriGin },
   { name: "army", label: "Arrival of Army", icon: "military_tech", component: ArrivaArmy },
-  { name: "tribe", label: "Tribes and Attire", icon: "people", component: TribePage },
+  // { name: "tribe", label: "Tribes and Attire", icon: "people", component: TribePage },
   { name: "boundaries", label: "Boundaries", icon: "map", component: BounDary },
   // Add other tabs here with corresponding components
 ];

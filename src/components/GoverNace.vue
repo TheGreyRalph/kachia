@@ -1,12 +1,12 @@
 <template>
-  <section class="md:p-8 rounded-lg mb-10">
+  <section class=" px-5 md:p-8 rounded-lg mb-10">
     <h1
-      class="text-green-main text-3xl text-center md:text-start font-semibold mb-4"
+      class="text-green-main text-3xl  text-start font-semibold mb-4"
     >
       Governance
     </h1>
     <p
-      class="text-gray-600 font-playfair text-sm text-center md:text-start mb-8"
+      class="text-gray-600 font-playfair text-sm text-start mb-8"
     >
       Kachia Local Government Council for many years like most
       municipal areas in Kaduna State, had been under the
@@ -22,7 +22,7 @@
       State.
     </p>
     <p
-      class="text-gray-600 font-playfair text-sm text-center md:text-start mb-8"
+      class="text-gray-600 font-playfair text-sm text-start mb-8"
     >
       In May of 2018, local government elections were held and in July
       of 2018, the local councils executives came into effect in line

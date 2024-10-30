@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section class=" md:px-32 px-5 ">
       <h2 class="text-green-main font-semibold">
         Origin of the Name "Kachia"
       </h2>

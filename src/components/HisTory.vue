@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-    class="px-32 py-5 flex text-base flex-col gap-5 font-playfair"
+    class="md:px-32 px-5 py-5 flex text-base flex-col gap-5 font-playfair"
   >
     <h2 class="text-green-main">HISTORY</h2>
 

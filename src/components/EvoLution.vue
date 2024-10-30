@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-    class="px-32 py-5 flex text-base flex-col gap-2 font-playfair"
+    class="md:px-32 px-5 py-5 flex text-base flex-col gap-2 font-playfair"
   >
     <p>
       Kachia, one of the oldest towns in Kaduna State, has a rich

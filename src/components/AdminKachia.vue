@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class=" my-8">
-      <section class=" bg-white rounded-lg overflow-hidden">
+      <section class=" bg-white px-5 md:px-0 rounded-lg overflow-hidden">
         <h1
                 class="text-green-main text-sm md:text-3xl font-semibold mb-4"
               >

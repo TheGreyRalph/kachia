@@ -25,7 +25,7 @@
     </div>
 
 
-    <div class="flex flex-wrap  px-5 py-5 md:py-10 font-playfair md:px-32 justify-between items-start q-col-gutter-md">
+    <div class="flex flex-wrap  px-10 py-5 md:py-10 font-playfair md:px-32 justify-between items-start q-col-gutter-md">
       <div class="w-full md:w-[40%]" data-aos="fade-right">
         <h1 class="text-green-main text-3xl font-semibold">About Kachia</h1>
         <h2 class="text-gray-500 font-semibold">
@@ -46,7 +46,7 @@
 
       </div>
  <div
-        class="bg-green-main p-8 flex justify-center  items-center w-[90%] md:w-[40%] "
+        class="bg-green-main md:p-8  mx-auto  flex justify-center  items-center w-[90%] md:w-[40%] "
         data-aos="fade-left"
       >
         <div
@@ -76,7 +76,7 @@
       </div>
 
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 justify-center flex-wrap  px-5 py-5 md:pt-8 md:pb-20 md:mb-20 font-playfair md:px-32 mt-10  md:mt-20 items-start w-full ">
+    <div class="grid grid-cols-1 md:grid-cols-2 justify-center flex-wrap  px-10 pb-20 md:pt-8 md:pb-20 md:mb-20 font-playfair md:px-32 mt-10  md:mt-20 items-start w-full ">
       <div
         class="flex  justify-start items-start w-full"
         data-aos="fade-left"
