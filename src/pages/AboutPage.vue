@@ -23,7 +23,7 @@
           <q-tab name="army" icon="military_tech" label="Arrival of Army" />
           <!-- <q-tab name="tribe" icon="people" label="Tribes and Attire" /> -->
           <q-tab name="boundaries" icon="map" label="Boundaries" />
-          <q-tab name="population" icon="people" label="Population" />
+          <q-tab name="economy" icon="people" label="Economy" />
           <q-tab name="climate" icon="wb_sunny" label="Climate" />
           <q-tab name="religion" icon="place" label="Religion" />
           <q-tab name="notable" icon="star" label="Notable People" />
@@ -58,8 +58,9 @@
           <q-tab-panel class="bg-bright-shade" name="origin">
             <OriGin />
           </q-tab-panel>
-          <q-tab-panel class="bg-bright-shade" name="boundaries">
-            <BounDary />
+          <q-tab-panel class="bg-bright-shade" name="economy">
+            <!-- <BounDary /> -->
+             <SocioEco/>
           </q-tab-panel>
           <q-tab-panel class="bg-bright-shade" name="population">
             <!-- Population content -->
@@ -82,6 +83,7 @@ import HisTory from "src/components/HisTory.vue";
 import OriGin from "src/components/OriGin.vue";
 import AboutSide from "src/components/AboutSide.vue";
 import BounDary from "src/components/BounDary.vue";
+import SocioEco from "src/components/SocioEco.vue";
 
 const selectedTab = ref("about");
 const isMobile = ref(window.innerWidth <= 768);

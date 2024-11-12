@@ -6,6 +6,7 @@
 
     <GovernmentSection />
     <TraditionSection />
+    <SpeechPart/>
 
     <div class=" bg-greenn-shade">
       <div class="custom-shape-divider-top-1730287576">
@@ -95,6 +96,7 @@
 import HeroSection from "components/HeroSection.vue";
 import AboutSection from "components/AboutSection.vue";
 import GovernmentSection from "components/GovernmentSection.vue";
+import SpeechPart from "src/components/SpeechPart.vue";
 // import TraditionSection from "components/TraditionSection.vue"
 // import FooterSection from 'src/components/FooterSection.vue';
 
