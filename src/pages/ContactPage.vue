@@ -119,7 +119,7 @@ const onSubmit = () => {
 }
 .parallax-section {
   position: relative;
-  background-image: url('images/hero2.jpeg');
+  background-image: url('/public/images//hero2.jpeg');
   height: 400px;
   background-attachment: fixed;
   background-position: center;

@@ -116,7 +116,7 @@ onMounted(() => {
 
 .parallax-section {
   position: relative;
-  background-image: url("images/kgin.jpg");
+  background-image: url("/public/images/kgin.jpg");
   height: 400px;
   background-attachment: fixed;
   background-position: center;

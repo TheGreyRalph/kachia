@@ -165,7 +165,7 @@ const toggleTribe = (tribe) => {
 
 .parallax-section {
   position: relative;
-  background-image: url("images/kachia2.jpg");
+  background-image: url("/public/images/kachia2.jpg");
   height: 400px;
   background-attachment: fixed;
   background-position: center;
