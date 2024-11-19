@@ -8,13 +8,17 @@
     </div>
 
     <section class="md:px-32 md:py-5 q-mt-md">
-      <h2 class="text-h4 text-green-main q-mb-md text-center">The People of Kachia</h2>
+      <h2 class="text-h4 text-green-main q-mb-md text-center">
+        The People of Kachia
+      </h2>
       <q-divider inset />
       <p class="text-body1 font-playfair q-mt-md q-px-md text-justify">
-        Kachia Local Government Area is home to a vibrant mix of ethnic groups, including the Kadara, Jaba, and Kuturmi as the dominant tribes. Others, such as the Hausa, Fulani, Bajju, Ikulu, Yoruba, Igbo, and Kagoro, also have a strong presence. Despite the diverse ethnicities, the people have coexisted peacefully over the years, creating a unique cultural blend.
+        Kachia Local Government Area is home to a vibrant mix of ethnic groups,
+        including the Kadara, Jaba, and Kuturmi as the dominant tribes. Others,
+        such as the Hausa, Fulani, Bajju, Ikulu, Yoruba and Igbo also
+        have a strong presence. Despite the diverse ethnicities, the people have
+        coexisted peacefully over the years, creating a unique cultural blend.
       </p>
-
-
 
       <!-- Desktop Sidebar & Content -->
       <div class="desktop-view flex">
@@ -43,14 +47,18 @@
             <p class="text-body1 text-justify q-mt-md">
               {{ selectedTribe.description }}
             </p>
-            <component v-if="selectedTribe.component" :is="selectedTribe.component" />
+            <component
+              v-if="selectedTribe.component"
+              :is="selectedTribe.component"
+            />
           </div>
           <div v-else>
-            <p class="text-body1 q-mt-md">Please select a tribe to view more information.</p>
+            <p class="text-body1 q-mt-md">
+              Please select a tribe to view more information.
+            </p>
           </div>
         </div>
       </div>
-
 
       <!-- Mobile Accordion View -->
       <div class="mobile-view accordion-tabs q-mt-md">
@@ -63,7 +71,10 @@
           </div>
 
           <transition name="fade">
-            <div v-show="tribe.id === activeTribeId" class="accordion-content text-body1 text-justify q-pa-md">
+            <div
+              v-show="tribe.id === activeTribeId"
+              class="accordion-content text-body1 text-justify q-pa-md"
+            >
               <p>{{ tribe.description }}</p>
               <component v-if="tribe.component" :is="tribe.component" />
             </div>
@@ -75,49 +86,51 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 
 // Import tribe-specific components
-import AdaraGroup from './AdaraGroup.vue';
-import HamGroup from 'src/components/HamGroup.vue';
-import KurmiGroup from 'src/components/KurmiGroup.vue';
-import BajjuGuy from 'src/components/BajjuGuy.vue';
+import AdaraGroup from "./AdaraGroup.vue";
+import HamGroup from "src/components/HamGroup.vue";
+import KurmiGroup from "src/components/KurmiGroup.vue";
+import BajjuGuy from "src/components/BajjuGuy.vue";
+import IkuluGroup from "src/components/IkuluGroup.vue";
 
 // Tribe data with corresponding components
 const tribes = [
   {
     id: 1,
-    name: 'Kadara',
+    name: "Kadara",
     description:
-      'The Kadara people are known for their unique traditions, rich history, and cultural heritage.',
+      "The Kadara people are known for their unique traditions, rich history, and cultural heritage.",
     component: AdaraGroup,
   },
   {
     id: 2,
-    name: 'Ham',
+    name: "Ham",
     description:
-      'The Ham people is celebrated for its traditional music, dance, and colorful festivals.',
+      "The Ham people is celebrated for its traditional music, dance, and colorful festivals.",
     component: HamGroup,
   },
   {
     id: 3,
-    name: 'Kuturmi',
+    name: "Kuturmi",
     description:
-      'The Kuturmi people are famous for their crafts and agricultural practices.',
-      component: KurmiGroup,
+      "The Kuturmi people are famous for their crafts and agricultural practices.",
+    component: KurmiGroup,
   },
   {
     id: 4,
-    name: 'Bajju',
+    name: "Bajju",
     description:
-      'The Bajju people have a strong sense of community, known for their vibrant clothing and customs.',
-      component: BajjuGuy,
+      "The Bajju people have a strong sense of community, known for their vibrant clothing and customs.",
+    component: BajjuGuy,
   },
   {
     id: 5,
-    name: 'Ikulu',
+    name: "Ikulu",
     description:
-      'The Ikulu tribe is known for its ancient rituals and deep connection with the land.',
+      "The Ikulu tribe is known for its ancient rituals and deep connection with the land.",
+      component: IkuluGroup,
   },
 ];
 
@@ -152,7 +165,7 @@ const toggleTribe = (tribe) => {
 
 .parallax-section {
   position: relative;
-  background-image: url('images/kachia2.jpg');
+  background-image: url("images/kachia2.jpg");
   height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -197,10 +210,12 @@ const toggleTribe = (tribe) => {
   padding: 15px;
 }
 
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.3s ease;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 
@@ -260,7 +275,6 @@ const toggleTribe = (tribe) => {
     display: none;
   }
 }
-
 
 /* Responsive styling */
 @media (max-width: 768px) {
