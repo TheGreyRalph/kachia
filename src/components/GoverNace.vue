@@ -69,10 +69,12 @@
         <h1 class="text-green-main text-3xl font-bold">
           Structure of the Local Government
         </h1>
-        <p class="text-gray-600 font-medium text-lg">
+        <p class="text-gray-600 font-playfair font-medium">
           The following council emerged in Kachia Local Government, to be in
-          office for 3 years in respect to Sections 10, 11, and 12 of Cap 3 of
-          2018.
+          office for 4 years. With the Supreme Court's landmark ruling on July
+          11, 2024, granting autonomy to local governments, the tenure of
+          councils has been extended to four years, replacing the three-year
+          term established by the state law of 2018
         </p>
       </div>
 
