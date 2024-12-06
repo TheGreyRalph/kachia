@@ -3,25 +3,21 @@
     <q-header class="bg-white py-3 font-playfair  ">
       <q-toolbar class="font-semibold">
 
-        <q-toolbar-title class=" flex -ml-10 md:-ml-80  items-center justify-center text-green-main">
+        <q-toolbar-title class=" flex -ml-10 md:-ml-60  items-center justify-center text-green-main">
           <img
-          src="images/kslogo.jpeg"
+          src="images/klogo.png"
           alt="Kachia Culture"
-          class="rounded-lg shadow-lg w-[20%]  md:w-[6%] "
+          class="rounded-lg  w-[25%]  md:w-[8%] "
         />
-        <img
-        src="images/klog.png"
-        alt="Kachia Culture"
-        class=" w-[30%] md:w-[10%] "
-      />
+        <p class=" text-green-main font-bold ">Kachia Local Government Area </p>
 
         </q-toolbar-title>
 
-        <div v-if="!$q.screen.lt.md" class="q-gutter-sm text-green-main q-mr-md q-mr-auto md:block">
-          <q-btn flat label="Home" :to="{ path: '/' }" />
-          <q-btn flat label="About Kachia" :to="{ path: '/about' }" />
-          <q-btn flat label="Culture" :to="{ path: '/culture' }" />
-          <q-btn flat label="Contact" :to="{ path: '/contact' }" />
+        <div v-if="!$q.screen.lt.md" class="q-gutter-sm font-bold text-green-main q-mr-md q-mr-auto md:block">
+          <q-btn class=" font-bold" flat label="Home" :to="{ path: '/' }" />
+          <q-btn class=" font-bold" flat label="About Kachia" :to="{ path: '/about' }" />
+          <q-btn class=" font-bold" flat label="Culture" :to="{ path: '/culture' }" />
+          <q-btn class=" font-bold" flat label="Contact" :to="{ path: '/contact' }" />
         </div>
 
         <q-btn
