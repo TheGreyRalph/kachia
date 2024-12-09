@@ -3,13 +3,13 @@
     <q-header class="bg-white py-3 font-playfair  ">
       <q-toolbar class="font-semibold">
 
-        <q-toolbar-title class=" flex -ml-10 md:-ml-60  items-center justify-center text-green-main">
+        <q-toolbar-title class=" md:flex flex -ml-10    md:-ml-60  items-center justify-center text-green-main">
           <img
           src="images/klogo.png"
           alt="Kachia Culture"
-          class="rounded-lg  w-[25%]  md:w-[8%] "
+          class="rounded-lg w-[25%]  md:w-[8%] "
         />
-        <p class=" text-green-main font-bold ">Kachia Local Government Area </p>
+        <p class=" text-green-main md:text-base text-sm font-bold ">Kachia Local Government Area </p>
 
         </q-toolbar-title>
 
