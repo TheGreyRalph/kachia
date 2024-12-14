@@ -1,23 +1,54 @@
 <template>
   <q-layout class="" view="lHh Lpr lFf">
-    <q-header class="bg-white py-3 font-playfair  ">
-      <q-toolbar class="font-semibold">
+    <div class="cus-header-section">
+      <div class="cus-header-cont">
+        <a href="/">
+          <div class="cus-header-logo-cont">
+            <img src="images/klogo.png" alt="Kachia Culture" class="" />
+            <h2 v-if="!$q.screen.lt.md" class="">
+              Kachia Local Government Area
+            </h2>
+            <h2 v-if="$q.screen.lt.md" class="">Kachia LGA</h2>
+          </div>
+        </a>
 
-        <q-toolbar-title class=" md:flex flex -ml-10    md:-ml-60  items-center justify-center text-green-main">
-          <img
-          src="images/klogo.png"
-          alt="Kachia Culture"
-          class="rounded-lg w-[25%]  md:w-[8%] "
-        />
-        <p class=" text-green-main md:text-base text-sm font-bold ">Kachia Local Government Area </p>
+        <div v-if="!$q.screen.lt.md" class="cus-header-nav">
+          <q-btn flat label="Home" :to="{ path: '/' }" />
+          <q-btn flat label="About Kachia" :to="{ path: '/about' }" />
+          <q-btn flat label="Culture" :to="{ path: '/culture' }" />
+          <q-btn flat label="Contact" :to="{ path: '/contact' }" />
+          <div class="cus-e-gov-btn-cont">
+            <button style="--clr: #7808d0">
+              <span class="button__icon-wrapper">
+                <svg
+                  viewBox="0 0 14 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="button__icon-svg"
+                  width="10"
+                >
+                  <path
+                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
 
-        </q-toolbar-title>
-
-        <div v-if="!$q.screen.lt.md" class="q-gutter-sm font-bold text-green-main q-mr-md q-mr-auto md:block">
-          <q-btn class=" font-bold" flat label="Home" :to="{ path: '/' }" />
-          <q-btn class=" font-bold" flat label="About Kachia" :to="{ path: '/about' }" />
-          <q-btn class=" font-bold" flat label="Culture" :to="{ path: '/culture' }" />
-          <q-btn class=" font-bold" flat label="Contact" :to="{ path: '/contact' }" />
+                <svg
+                  viewBox="0 0 14 15"
+                  fill="none"
+                  width="10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="button__icon-svg button__icon-svg--copy"
+                >
+                  <path
+                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+              E-Gov Portal
+            </button>
+          </div>
         </div>
 
         <q-btn
@@ -29,9 +60,8 @@
           @click="toggleLeftDrawer"
           class="q-hidden-md text-green-main"
         />
-
-      </q-toolbar>
-    </q-header>
+      </div>
+    </div>
 
     <q-drawer
       v-model="leftDrawerOpen"
@@ -60,20 +90,19 @@
     </q-page-container>
 
     <!-- <q-footer> -->
-  <FooterSection/>
+    <FooterSection />
 
     <!-- </q-footer> -->
   </q-layout>
-
 </template>
 
 <script setup>
-import FooterSection from 'src/components/FooterSection.vue';
-import { ref } from 'vue'
+import FooterSection from "src/components/FooterSection.vue";
+import { ref } from "vue";
 
-const leftDrawerOpen = ref(false)
+const leftDrawerOpen = ref(false);
 
 function toggleLeftDrawer() {
-  leftDrawerOpen.value = !leftDrawerOpen.value
+  leftDrawerOpen.value = !leftDrawerOpen.value;
 }
 </script>

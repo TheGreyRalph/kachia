@@ -1,5 +1,5 @@
 <template>
-  <section class="px-5 md:p-8 rounded-lg mb-10">
+  <section class="cus-governance-wrapper">
     <h1 class="text-green-main text-3xl text-start font-semibold mb-4">
       Governance
     </h1>
@@ -26,40 +26,36 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
       <div
-        class="flex flex-col items-center text-center bg-green-main p-6 rounded-lg shadow-md"
+        class="flex flex-col items-center text-center p-6 rounded-lg cus-fade-shadow"
       >
         <img
           alt="Chairman of Kachia LGA"
-          src="images/drmanzo.jpeg"
-          class="rounded-full shadow-lg w-40 h-40 object-cover border-4 border-green-500 mb-4"
+          src="images/dmh1.jpg"
+          class="rounded-full w-40 h-40 object-cover border-4 mb-4"
         />
-        <h2 class="text-xl font-semibold text-white">
-          Executive Chairman of Kachia LGA
-        </h2>
-        <p class="text-white font-semibold">Dr. Manzo Maigari</p>
+        <h2 class="text-xl font-semibold">Executive Chairman of Kachia LGA</h2>
+        <p class="font-semibold">Hon. Dr. Manzo Daniel Maigari</p>
 
-        <p class="text-gray-100 font-playfair mt-2">
-          Responsible for local governance, addressing the needs of the
+        <p class="text-gray-600 font-playfair mt-2">
+          <!-- Responsible for local governance, addressing the needs of the
           community, and working closely with state officials to implement local
-          policies and development projects.
+          policies and development projects. -->
         </p>
       </div>
 
       <div
-        class="flex flex-col items-center text-center bg-green-main p-6 rounded-lg shadow-md"
+        class="flex flex-col items-center text-center p-6 rounded-lg cus-fade-shadow"
       >
         <img
           alt="Chairman of Kachia LGA"
           src="images/vc.jpeg"
           class="rounded-full shadow-lg w-40 h-40 object-cover border-4 border-green-500 mb-4"
         />
-        <h2 class="text-xl font-semibold text-white">
-          Vice Chairman of Kachia LGA
-        </h2>
-        <p class="text-white font-semibold">Hon Hussieni Abdullahi</p>
-        <p class="text-gray-100 font-playfair mt-2">
-          Assists the Chairman in overseeing local governance and ensuring
-          effective administration within Kachia LGA.
+        <h2 class="text-xl font-semibold">Vice Chairman of Kachia LGA</h2>
+        <p class="font-semibold">Hon Hussieni Abdullahi</p>
+        <p class="text-gray-600 font-playfair mt-2">
+          <!-- Assists the Chairman in overseeing local governance and ensuring
+          effective administration within Kachia LGA. -->
         </p>
       </div>
     </div>
@@ -84,21 +80,21 @@
           Executive Arm
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="bg-green-main p-4 rounded-lg shadow-md text-center">
+          <div class="cus-extras-1 p-4 rounded-lg shadow-md text-center">
             <h3 class="text-xl font-semibold text-white">Executive Chairman</h3>
-            <p class="text-gray-100 mt-2">Hon. Dr. Manzo Maigari</p>
+            <p class="text-gray-100 mt-2">Hon. Dr. Manzo Daniel Maigari</p>
           </div>
-          <div class="bg-green-main p-4 rounded-lg shadow-md text-center">
+          <div class="cus-extras-1 p-4 rounded-lg shadow-md text-center">
             <h3 class="text-xl font-semibold text-white">Vice Chairman</h3>
             <p class="text-gray-100 mt-2">Hon. Hussaini Abdullahi</p>
           </div>
-          <div class="bg-green-main p-4 rounded-lg shadow-md text-center">
+          <div class="cus-extras-1 p-4 rounded-lg shadow-md text-center">
             <h3 class="text-xl font-semibold text-white">
               Secretary to Local Government
             </h3>
             <p class="text-gray-100 mt-2">Yet to be appointed</p>
           </div>
-          <div class="bg-green-main p-4 rounded-lg shadow-md text-center">
+          <div class="cus-extras-1 p-4 rounded-lg shadow-md text-center">
             <h3 class="text-xl font-semibold text-white">
               3 Supervisory Councilors
             </h3>

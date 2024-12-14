@@ -1,9 +1,7 @@
 <template>
-  <q-page class=" text-center font-playfair">
-
-
+  <q-page class="text-center font-playfair">
     <div class="parallax-section">
-      <div class=" overlay "></div>
+      <div class="overlay"></div>
       <div class="parallax-content">
         <h1 class="text-white text-h3 q-my-md">Get in Touch</h1>
         <p class="text-white q-my-sm">
@@ -14,7 +12,9 @@
 
     <div class="q-mt-xl q-px-lg q-pb-md">
       <div class="row justify-center">
-        <div class="col-12 col-md-8 col-lg-6 bg-white q-pa-md rounded-lg shadow-lg">
+        <div
+          class="col-12 col-md-8 col-lg-6 bg-white q-pa-md rounded-lg shadow-lg"
+        >
           <h2 class="text-green-main text-h5 q-mb-md">Contact Us</h2>
 
           <q-form @submit="onSubmit">
@@ -64,32 +64,32 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue';
-import { Notify } from 'quasar';
+import { reactive } from "vue";
+import { Notify } from "quasar";
 
 const formData = reactive({
-  name: '',
-  email: '',
-  message: ''
+  name: "",
+  email: "",
+  message: "",
 });
 
 const onSubmit = () => {
   if (!formData.name || !formData.email || !formData.message) {
     Notify.create({
-      type: 'negative',
-      message: 'Please fill in all the fields.',
+      type: "negative",
+      message: "Please fill in all the fields.",
     });
     return;
   }
 
   Notify.create({
-    type: 'positive',
-    message: 'Your message has been sent successfully!',
+    type: "positive",
+    message: "Your message has been sent successfully!",
   });
 
-  formData.name = '';
-  formData.email = '';
-  formData.message = '';
+  formData.name = "";
+  formData.email = "";
+  formData.message = "";
 };
 </script>
 
@@ -119,7 +119,7 @@ const onSubmit = () => {
 }
 .parallax-section {
   position: relative;
-  background-image: url('/public/images//hero2.jpeg');
+  background-image: url("/images//hero2.jpeg");
   height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -146,5 +146,4 @@ const onSubmit = () => {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
-
 </style>

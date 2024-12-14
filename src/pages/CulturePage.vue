@@ -15,8 +15,8 @@
       <p class="text-body1 font-playfair q-mt-md q-px-md text-justify">
         Kachia Local Government Area is home to a vibrant mix of ethnic groups,
         including the Kadara, Jaba, and Kuturmi as the dominant tribes. Others,
-        such as the Hausa, Fulani, Bajju, Ikulu, Yoruba and Igbo also
-        have a strong presence. Despite the diverse ethnicities, the people have
+        such as the Hausa, Fulani, Bajju, Ikulu, Yoruba and Igbo also have a
+        strong presence. Despite the diverse ethnicities, the people have
         coexisted peacefully over the years, creating a unique cultural blend.
       </p>
 
@@ -130,7 +130,7 @@ const tribes = [
     name: "Ikulu",
     description:
       "The Ikulu tribe is known for its ancient rituals and deep connection with the land.",
-      component: IkuluGroup,
+    component: IkuluGroup,
   },
 ];
 
@@ -165,7 +165,7 @@ const toggleTribe = (tribe) => {
 
 .parallax-section {
   position: relative;
-  background-image: url("/public/images/kachia2.jpg");
+  background-image: url("/images/kachia2.jpg");
   height: 400px;
   background-attachment: fixed;
   background-position: center;

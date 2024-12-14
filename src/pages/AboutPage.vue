@@ -8,7 +8,9 @@
       </div>
     </div>
 
-    <div class="mx-5 my-20 bg-bright-shade border-bright-shade shadow-sm border flex flex-nowrap ">
+    <div
+      class="mx-5 my-20 bg-bright-shade border-bright-shade shadow-sm border flex flex-nowrap"
+    >
       <!-- Tabs for Desktop and Tablet View -->
       <div v-if="!isMobile" class="md:col-3">
         <q-tabs
@@ -32,7 +34,14 @@
 
       <!-- Accordion for Mobile View -->
       <div v-else class="w-full">
-        <q-expansion-item v-for="(tab, index) in tabs" :key="index" :label="tab.label" :icon="tab.icon" expand-separator header-class="text-green-main font-bold">
+        <q-expansion-item
+          v-for="(tab, index) in tabs"
+          :key="index"
+          :label="tab.label"
+          :icon="tab.icon"
+          expand-separator
+          header-class="text-green-main font-bold"
+        >
           <component :is="tab.component" />
         </q-expansion-item>
       </div>
@@ -60,7 +69,7 @@
           </q-tab-panel>
           <q-tab-panel class="bg-bright-shade" name="economy">
             <!-- <BounDary /> -->
-             <SocioEco/>
+            <SocioEco />
           </q-tab-panel>
           <q-tab-panel class="bg-bright-shade" name="population">
             <!-- Population content -->
@@ -91,10 +100,20 @@ const isMobile = ref(window.innerWidth <= 768);
 // Define tabs data
 const tabs = [
   { name: "about", label: "About", icon: "info", component: AboutSide },
-  { name: "evolution", label: "Evolution", icon: "history_edu", component: EvoLution },
+  {
+    name: "evolution",
+    label: "Evolution",
+    icon: "history_edu",
+    component: EvoLution,
+  },
   { name: "history", label: "History", icon: "book", component: HisTory },
   { name: "origin", label: "Etymology", icon: "language", component: OriGin },
-  { name: "army", label: "Arrival of Army", icon: "military_tech", component: ArrivaArmy },
+  {
+    name: "army",
+    label: "Arrival of Army",
+    icon: "military_tech",
+    component: ArrivaArmy,
+  },
   // { name: "tribe", label: "Tribes and Attire", icon: "people", component: TribePage },
   { name: "boundaries", label: "Boundaries", icon: "map", component: BounDary },
   // Add other tabs here with corresponding components
@@ -116,7 +135,7 @@ onMounted(() => {
 
 .parallax-section {
   position: relative;
-  background-image: url("/public/images/kgin.jpg");
+  background-image: url("/images/kgin.jpg");
   height: 400px;
   background-attachment: fixed;
   background-position: center;
