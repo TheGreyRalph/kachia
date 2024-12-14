@@ -169,8 +169,8 @@ import { ref, onMounted, nextTick } from "vue";
 
 // Define counters and their target values
 const counters = ref([
-  { value: 0, targetValue: 373100 },
   { value: 0, targetValue: 4570 },
+  { value: 0, targetValue: 373100 },
   { value: 0, targetValue: 12 },
 ]);
 
