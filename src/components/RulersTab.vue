@@ -4,16 +4,17 @@
       Rulers of Kachia
     </h1>
     <p class="text-gray-600 font-playfair text-sm md:text-lg mb-4">
-      Historically, the leadership in Kachia was not formally
-      organized. Brave and intelligent warriors led the people, and as
-      time progressed, the people began to organize themselves under
-      more formal leadership structures.
+      Historically, the leadership in Kachia was not formally organized. Brave
+      and intelligent warriors led the people, and as time progressed, the
+      people began to organize themselves under more formal leadership
+      structures.
     </p>
     <p class="text-gray-600 text-sm md:text-lg mb-8">
-      Kachia was traditionally governed by village heads (Sarakuna),
-      with the first being Mal. Idi Magaji Maikalgo, followed by other
-      notable leaders. These are the rulers of Kachia:
+      Kachia was traditionally governed by village heads (Sarakuna), with the
+      first being Mal. Idi Magaji Maikalgo, followed by other notable leaders.
+      These are the rulers of Kachia:
     </p>
+
     <ul class="list-disc list-inside text-gray-700">
       <li>Mal. Idi Magaji Maikalgo</li>
       <li>Mal. Jarmai</li>
@@ -27,20 +28,16 @@
       <li>Engr. Tanimu Badamasi (current Sarkin Kachia)</li>
     </ul>
     <p class="text-gray-600 text-sm md:text-lg mt-4">
-      Over time, the village administration in Kachia was influenced
-      by the Fulani or Habe system, which was likely adopted through
-      contact with the Hausas. The ruling houses today are those of
-      Sani Abubakar Danladi Shugaba and Musa Sarkin Kachia.
+      Over time, the village administration in Kachia was influenced by the
+      Fulani or Habe system, which was likely adopted through contact with the
+      Hausas. The ruling houses today are those of Sani Abubakar Danladi Shugaba
+      and Musa Sarkin Kachia.
     </p>
   </section>
 </template>
 
 <script>
-  export default {
-
-  }
+export default {};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

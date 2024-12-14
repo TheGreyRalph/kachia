@@ -16,30 +16,29 @@
   </q-page>
 </template>
 
-
 <script>
 export default {
   data() {
     return {
       images: [
-        { src: '/images/kadara1.jpg', info: 'The Kadara People' },
-        { src: '/images/jaba2.jpeg', info: ' The Jaba People' },
-        { src: '/images/kadara3.jpeg', info: 'lorem ' },
+        { src: "/images/kadara1.jpg", info: "The Kadara People" },
+        { src: "/images/jaba2.jpeg", info: " The Jaba People" },
+        { src: "/images/kadara3.jpeg", info: "lorem " },
         // { src: 'images/jaba2.jpeg', info: 'lorem ' },
-        { src: 'images/bajju.jpeg', info: 'lorem ' }
-      ]
+        { src: "images/bajju.jpeg", info: "lorem " },
+      ],
     };
   },
   methods: {
     pauseRotation() {
-      const container = document.querySelector('.image-container');
-      container.style.animationPlayState = 'paused';
+      const container = document.querySelector(".image-container");
+      container.style.animationPlayState = "paused";
     },
     resumeRotation() {
-      const container = document.querySelector('.image-container');
-      container.style.animationPlayState = 'running';
-    }
-  }
+      const container = document.querySelector(".image-container");
+      container.style.animationPlayState = "running";
+    },
+  },
 };
 </script>
 <style scoped>

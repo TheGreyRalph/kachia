@@ -79,6 +79,7 @@
                 Councillors, <span>Monday, 4th November 2024</span>, Local
                 Government Secretariat, Kachia.
               </p>
+
               <p>
                 Let me begin by giving thanks to the Almighty God for making
                 this day a reality and to welcome you all to this auspicious

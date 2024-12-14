@@ -117,6 +117,7 @@ const onSubmit = () => {
 .full-width {
   width: 100%;
 }
+
 .parallax-section {
   position: relative;
   background-image: url("/images//hero2.jpeg");
