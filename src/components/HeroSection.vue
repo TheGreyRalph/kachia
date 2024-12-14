@@ -7,7 +7,7 @@
       <div ref="counter1" data-index="0">
         <div>
           <p>Land Area</p>
-          <p>{{ counters[0].value }}km</p>
+          <p>{{ counters[0].value }}km<sup>2</sup></p>
         </div>
         <div>
           <svg
