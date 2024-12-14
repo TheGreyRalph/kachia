@@ -63,27 +63,69 @@
       </div>
     </div>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      side="left"
-      overlay
-      class="q-hidden-md-and-up"
-    >
-      <q-list>
-        <q-item clickable v-ripple :to="{ path: '/' }">
-          <q-item-section>Home</q-item-section>
-        </q-item>
-        <q-item clickable v-ripple :to="{ path: '/about' }">
-          <q-item-section>About Kachia</q-item-section>
-        </q-item>
-        <q-item clickable v-ripple :to="{ path: '/culture' }">
-          <q-item-section>Culture</q-item-section>
-        </q-item>
-        <q-item clickable v-ripple :to="{ path: '/contact' }">
-          <q-item-section>Contact</q-item-section>
-        </q-item>
-      </q-list>
-    </q-drawer>
+    <div class="cus-drawer-wrapper">
+      <q-drawer
+        v-model="leftDrawerOpen"
+        side="left"
+        overlay
+        class="q-hidden-md-and-up cus-drawer-md"
+      >
+        <div class="cus-drawer-cont-md">
+          <div class="cus-header-logo-cont">
+            <img src="images/klogo-nbg.png" alt="Kachia Culture" class="" />
+            <h2 class="">Kachia Local Government Area</h2>
+          </div>
+          <div class="cus-drawer-nav">
+            <q-list>
+              <q-item clickable v-ripple :to="{ path: '/' }">
+                <q-item-section>Home</q-item-section>
+              </q-item>
+              <q-item clickable v-ripple :to="{ path: '/about' }">
+                <q-item-section>About Kachia</q-item-section>
+              </q-item>
+              <q-item clickable v-ripple :to="{ path: '/culture' }">
+                <q-item-section>Culture</q-item-section>
+              </q-item>
+              <q-item clickable v-ripple :to="{ path: '/contact' }">
+                <q-item-section>Contact</q-item-section>
+              </q-item>
+            </q-list>
+            <div class="cus-e-gov-btn-cont">
+              <button style="--clr: #7808d0">
+                <span class="button__icon-wrapper">
+                  <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg"
+                    width="10"
+                  >
+                    <path
+                      d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    width="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg button__icon-svg--copy"
+                  >
+                    <path
+                      d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </span>
+                E-Gov Portal
+              </button>
+            </div>
+          </div>
+        </div>
+      </q-drawer>
+    </div>
 
     <q-page-container>
       <router-view />

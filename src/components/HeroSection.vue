@@ -7,7 +7,7 @@
       <div ref="counter1" data-index="0">
         <div>
           <p>Land Area</p>
-          <p>{{ counters[0].value }}km</p>
+          <p>{{ counters[0].value }}km<sup>2</sup></p>
         </div>
         <div>
           <svg
@@ -169,8 +169,8 @@ import { ref, onMounted, nextTick } from "vue";
 
 // Define counters and their target values
 const counters = ref([
-  { value: 0, targetValue: 373100 },
   { value: 0, targetValue: 4570 },
+  { value: 0, targetValue: 373100 },
   { value: 0, targetValue: 12 },
 ]);
 
