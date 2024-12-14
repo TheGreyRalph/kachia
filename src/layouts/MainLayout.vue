@@ -56,9 +56,10 @@
           dense
           round
           icon="menu"
+          size="20px"
           v-if="$q.screen.lt.md"
           @click="toggleLeftDrawer"
-          class="q-hidden-md text-green-main"
+          class="q-hidden-md text-green-main cus-hamburger"
         />
       </div>
     </div>
@@ -163,7 +164,7 @@
 
 <script setup>
 import FooterSection from "src/components/FooterSection.vue";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
 const leftDrawerOpen = ref(false);
 

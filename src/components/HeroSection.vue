@@ -146,12 +146,12 @@
       </p>
     </div>
     <div class="cus-hierarchy-showcase-cont">
-      <div data-aos="fade-up" class="cus-hierarchy-visual-1">
+      <div class="cus-hierarchy-visual-1" :class="{ pair: isElement1 }">
         <div><img src="/images/h1.png" alt="" /></div>
         <div><img src="/images/h2.png" alt="" /></div>
         <div><img src="/images/h3.png" alt="" /></div>
       </div>
-      <div data-aos="fade-up" class="cus-hierarchy-visual-2">
+      <div class="cus-hierarchy-visual-2" :class="{ pair: !isElement1 }">
         <div><img src="/images/FRN.png" alt="" /></div>
         <div><img src="/images/logokd.png" alt="" /></div>
         <div><img src="/images/klogo01.png" alt="" /></div>
@@ -188,6 +188,7 @@ const countUp = (counter) => {
   }, 50);
 };
 
+const isElement1 = ref(true);
 // Intersection Observer setup
 onMounted(() => {
   nextTick(() => {
@@ -219,6 +220,12 @@ onMounted(() => {
   //     once: true, // Ensures AOS animations run only once
   //   });
   // });
+
+  setInterval(() => {
+    // Toggle the value of isElement1 every 5 seconds
+    isElement1.value = !isElement1.value;
+    console.log("yessssssssssssssss");
+  }, 5000);
 });
 </script>
 

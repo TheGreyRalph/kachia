@@ -9,6 +9,13 @@
   .cus-header-section {
     .cus-header-cont {
       padding: 0.8rem 1rem;
+      align-items: center;
+    }
+    .cus-hamburger {
+      // background: rgba(245, 245, 245, 0.573);
+      width: 30px;
+      height: 30px;
+      box-sizing: border-box;
     }
     .cus-header-logo-cont {
       * {
@@ -124,7 +131,6 @@
       }
     }
   }
-
   .cus-hero-wrapper {
     position: relative;
     .cus-kachia-numbers-cont {
@@ -182,12 +188,11 @@
       width: 100%;
       height: 250px;
       bottom: 0;
-      display: flex;
       // display: none !important;
       justify-content: space-between;
       padding: 0 0;
       [class^="cus-hierarchy-visual"] {
-        display: flex;
+        display: none;
         height: 100%;
         align-items: end;
         position: absolute;
@@ -258,19 +263,48 @@
         }
       }
       .cus-hierarchy-visual-1 {
-        // display: none !important;
-        // animation: appearDisappear-1 4s ease-in-out infinite;
-        animation-delay: 0s;
-        opacity: 0;
       }
       .cus-hierarchy-visual-2 {
-        // display: none !important;
         max-width: 100%;
-        opacity: 0;
-        animation: appearDisappear-2 4s ease-in-out infinite;
-        animation-delay: 0s;
-        display: none;
       }
+    }
+  }
+  .pair {
+    display: flex !important;
+    animation-name: slide-up;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    transform: translateY(270px);
+  }
+  @keyframes slide-up {
+    0% {
+      transform: translateY(270px);
+    }
+    20% {
+      transform: translateY(0px);
+    }
+    30% {
+      transform: translateY(0px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(0px);
+    }
+    70% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(270px);
+      opacity: 0;
     }
   }
   @keyframes appearDisappear-1 {
